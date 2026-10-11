@@ -5,6 +5,15 @@ Source code:
 
 <img width="1422" height="748" alt="image" src="https://github.com/user-attachments/assets/20c5cbb3-897f-4520-8889-305022c36a08" />
 
+Before:
+
+<img width="1303" height="240" alt="image" src="https://github.com/user-attachments/assets/c8be70d4-e64a-4923-9448-1a5a207dd905" />
+
+<img width="1201" height="389" alt="image" src="https://github.com/user-attachments/assets/14f7cd04-85e1-49a8-8554-3e85c6728a82" />
+
+<img width="1588" height="892" alt="image" src="https://github.com/user-attachments/assets/1ce53d3c-905e-41ed-8795-15d4cbf89abe" />
+
+
 Effects:
 
 <img width="1332" height="212" alt="image" src="https://github.com/user-attachments/assets/a1272358-a7af-4f25-8820-0c6ea7e836aa" />
