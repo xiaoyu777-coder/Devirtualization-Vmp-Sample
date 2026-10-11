@@ -2,7 +2,7 @@ import struct, pefile
 from unicorn import *
 from unicorn.x86_const import *
 
-PE = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.devirt.exe"
+PE = "VMPTestAndResearch.devirt.exe"
 pe = pefile.PE(PE)
 IB = pe.OPTIONAL_HEADER.ImageBase
 mu = Uc(UC_ARCH_X86, UC_MODE_64)
