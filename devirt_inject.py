@@ -2,8 +2,8 @@ import pefile, struct
 from capstone import *
 
 IB = 0x140000000
-SRC = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.vmp.exe"
-OUT = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.devirt.exe"
+SRC = "VMPTestAndResearch.vmp.exe"
+OUT = "VMPTestAndResearch.devirt.exe"
 
 # targets recovered from the VM trace
 COUT_IAT   = 0x140021108
