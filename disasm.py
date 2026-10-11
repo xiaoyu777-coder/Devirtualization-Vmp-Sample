@@ -1,7 +1,7 @@
 import sys, pefile
 from capstone import *
 
-PE = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.vmp.exe"
+PE = "VMPTestAndResearch.vmp.exe"
 pe = pefile.PE(PE, fast_load=True)
 IB = pe.OPTIONAL_HEADER.ImageBase
 md = Cs(CS_ARCH_X86, CS_MODE_64)
