@@ -286,3 +286,9 @@ python devirt_verify.py
 - The recovered code is a **semantically equivalent** `main` (it calls the original `operator<<` thunk and the two imports); it is not a byte-for-byte reconstruction of the compiler’s original output. Strings are inlined in the new section.
 - For a fully automated general-purpose devirtualizer: turn “call-out extraction + per-step VM register read/write + handler semantic probing” into a generic pass that can emit RIP-relative code for any virtualized function and inject it into a new section.
 - Handler semantics are currently determined by manual inspection plus runtime observation (`lift.py`’s arithmetic inference). VMProtect’s mutated copies introduce noise; “isolated probing” (run a single handler with controlled initial VM-register values) is needed to name them definitively.
+
+---
+
+## Disclaimer
+
+This is for educational research and study purposes only. Do not use it for the purpose of cracking commercial software. Any secondary modifications you make to this research will be beyond my responsibility.
