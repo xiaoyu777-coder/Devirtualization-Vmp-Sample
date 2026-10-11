@@ -1,7 +1,7 @@
 import pefile
 from capstone import *
 
-PE = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.vmp.exe"
+PE = "VMPTestAndResearch.vmp.exe"
 pe = pefile.PE(PE, fast_load=True)
 IB = pe.OPTIONAL_HEADER.ImageBase
 md = Cs(CS_ARCH_X86, CS_MODE_64)
@@ -12,7 +12,7 @@ def read(va, n):
     except Exception:
         return b""
 
-h = [int(x, 16) for x in open(r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\handlers.txt")]
+h = [int(x, 16) for x in open("handlers.txt")]
 uniq = list(dict.fromkeys(h))
 for a in uniq:
     insns = list(md.disasm(read(a, 16 * 200), a))[:200]
