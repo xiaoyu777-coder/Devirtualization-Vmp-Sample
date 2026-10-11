@@ -14,7 +14,7 @@ def read(va, n):
             return pe.get_data(rva, min(n, s.VirtualAddress + vsz - rva))
     return b""
 
-h = [int(x, 16) for x in open(r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\handlers.txt")]
+h = [int(x, 16) for x in open("handlers.txt")]
 uniq = list(dict.fromkeys(h))
 print("total dispatches:", len(h), " unique handlers:", len(uniq))
 n_insn = int(sys.argv[1]) if len(sys.argv) > 1 else 8
