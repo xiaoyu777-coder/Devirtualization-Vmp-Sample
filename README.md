@@ -265,7 +265,6 @@ Behavior, call sequence, and return value are **identical** to the original virt
 ## 10. Reproduction Commands
 
 ```powershell
-cd D:\Code\VSS\VMPTestAndResearch\x64\Debug
 
 # 1) Emulate + trace (fake cout / stub imports)
 python vmtrace.py 600000
