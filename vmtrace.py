@@ -3,7 +3,7 @@ import pefile
 from unicorn import *
 from unicorn.x86_const import *
 
-PE   = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\VMPTestAndResearch.vmp.exe"
+PE   = "VMPTestAndResearch.vmp.exe"
 START = 0x1401FC653          # vm_entry reached from main
 LIMIT = int(sys.argv[1]) if len(sys.argv) > 1 else 300000
 TRACE_FILE = r"D:\Code\VSS\VMPTestAndResearch\x64\Debug\trace.txt"
